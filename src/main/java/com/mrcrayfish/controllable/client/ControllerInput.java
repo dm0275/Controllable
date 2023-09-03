@@ -1087,7 +1087,9 @@ public class ControllerInput
     {
         try
         {
-            int i = (creative.inventorySlots.inventorySlots.size() + 9 - 1) / 9 - 5;
+            // int i = (creative.inventorySlots.inventorySlots.size() + 9 - 1) / 9 - 5;
+            // Temporary fix for scrolling issue in creative mode
+            int i = 10;
             int dir = 0;
 
             if(controller.getRThumbStickYValue() <= -0.8F)
